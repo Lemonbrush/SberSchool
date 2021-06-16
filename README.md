@@ -2,7 +2,7 @@
 
 | Lecture | Note | Homework  |
 | :--- | :--- | :--- |
-| Знакомство со школой | [Общие правила и пр.](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/GeneralRules.md) [Требования к финальному проекту](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/FinalProjectRequirements.md) | - | 
+| Знакомство со школой | [Общие правила и пр.](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/GeneralRules.md) <p> [Требования к финальному проекту](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/FinalProjectRequirements.md) | - | 
 | Архитектура iOS. Жизненный цикл приложения. RunLoop | - | - | 
 | Основы git | - | - | 
 | Конструкции языка, Optional, типы данных в Swift | - | - | 
