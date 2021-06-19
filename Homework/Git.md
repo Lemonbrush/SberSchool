@@ -1,7 +1,5 @@
-# Git Д/З
+# Задание
 
-### Задание
-до 25 числа
 - [X] Создать проект
 - [X] Добавить Readme
 - [X] Добавить лицензию
@@ -21,7 +19,10 @@
 
 ---
 
-### Источники
-## Статьи
+## Источники
+### Статьи
 - [Trunk Based Development](https://trunkbaseddevelopment.com)
 - [Почему Trunk Based Development – лучшая модель ветвления](https://habr.com/ru/post/519314/)
+
+### Видео
+- [Git patterns and anti-patterns for successful developers : Build 2018](https://youtu.be/ykZbBD-CmP8)
