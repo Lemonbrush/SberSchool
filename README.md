@@ -2,11 +2,11 @@
 
 | №/Presentation | Lecture/Note | Homework  |
 | :--- | :--- | :--- |
-|  0 |[Знакомство со школой](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/GeneralRules.md) | - |   
-| [1](https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/1.pdf) | [Архитектура iOS. Жизненный цикл приложения](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/iOSAchitecture.md) | - |  
-| [2](https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/2.pdf) | [Основы git](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/Git.md) | [Эссе](https://github.com/Lemonbrush/SberSchool/blob/master/Homework/Git.md) |   
-| [3](https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/3.pdf) | [Конструкции языка, Optional, типы данных в Swift](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/SwiftConstructions.md) | [CopyOnWrite на reference type](https://github.com/Lemonbrush/SberSchool/blob/master/Homework/SwiftConstructions.md) |  
-| [4] | [Коллекции, closures в Swift](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/Closures.md) | [Multiset](https://github.com/Lemonbrush/SberSchool/blob/master/Homework/Closures.md) |  
+|  `0` |[Знакомство со школой](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/GeneralRules.md) | - |   
+| [`1`](https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/1.pdf) | [Архитектура iOS. Жизненный цикл приложения](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/iOSAchitecture.md) | - |  
+| [`2`](https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/2.pdf) | [Основы git](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/Git.md) | [Эссе](https://github.com/Lemonbrush/SberSchool/blob/master/Homework/Git.md) |   
+| [`3`](https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/3.pdf) | [Конструкции языка, Optional, типы данных в Swift](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/SwiftConstructions.md) | [CopyOnWrite на reference type](https://github.com/Lemonbrush/SberSchool/blob/master/Homework/SwiftConstructions.md) |  
+| [`4`](https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/4.pdf) | [Коллекции, closures в Swift](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/Closures.md) | [Multiset](https://github.com/Lemonbrush/SberSchool/blob/master/Homework/Closures.md) |  
 | [5] | Работа со строками, работа с протоколами, диспетчеризация Swift | - |  
 | [6] | Generics | - | 
 | [7] | Функции высшего порядка | - | 
