@@ -1,6 +1,6 @@
 # SberSchool  
 
-| №/Presentation | Lecture/Note | Practice | Homework |
+| №/PPT | Lecture/Note | Practice | Homework |
 | :--- | :--- | :--- | :--- |
 |  `0` |[Знакомство со школой][0-Lecture]																| - 											 | - 											|     
 | [`1`][1-preseentation] | [Архитектура iOS. Жизненный цикл приложения][1-Lecture] 						| - 											 | - 											|  
