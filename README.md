@@ -2,13 +2,13 @@
 
 | №/PPT | Lecture/Note | Practice | Homework |
 | :--- | :--- | :--- | :--- |
-|  `0` |[Знакомство со школой][0-Lecture]																| - 											 | - 											|     
-| [`1`][1-preseentation] | [Архитектура iOS. Жизненный цикл приложения][1-Lecture] 						| - 											 | - 											|  
-| [`2`][2-preseentation] | [Основы git][2-Lecture] 														| - 											 | [Эссе][2-Homework] 							|   
-| [`3`][3-preseentation] | [Конструкции языка, Optional, типы данных в Swift][3-Lecture] 				| [PropertyWrapper][3-Practice] 				 | [CopyOnWrite на reference type][3-Homework] 	|  
-| [`4`][4-preseentation] | [Коллекции, closures в Swift][4-Lecture] 									| [Hashable][4-Practice-1]<p>[Sort][4-Practice-2]| [Multiset][4-Homework] 						|  
-| [`5`][5-preseentation] | [Работа со строками, работа с протоколами, диспетчеризация Swift][5-Lecture] | [String_function][5-Practice] 				 | [StringCalculator][5-Homework]				|  
-| [`6`] | Generics | - | - | 
+|  `0` |[Знакомство со школой][0-Lecture]																| - 											 			| - 											|     
+| [`1`][1-preseentation] | [Архитектура iOS. Жизненный цикл приложения][1-Lecture] 						| - 											 			| - 											|  
+| [`2`][2-preseentation] | [Основы git][2-Lecture] 														| - 														| [Эссе][2-Homework] 							|   
+| [`3`][3-preseentation] | [Конструкции языка, Optional, типы данных в Swift][3-Lecture] 				| [PropertyWrapper][3-Practice] 				 			| [CopyOnWrite на reference type][3-Homework] 	|  
+| [`4`][4-preseentation] | [Коллекции, closures в Swift][4-Lecture] 									| [Hashable][4-Practice-1]<p>[Sort][4-Practice-2]			| [Multiset][4-Homework] 						|  
+| [`5`][5-preseentation] | [Работа со строками, работа с протоколами, диспетчеризация Swift][5-Lecture] | [String_function][5-Practice] 				 			| [StringCalculator][5-Homework]				|  
+| [`6`][6-preseentation] | [Generics][6-Lecture]  														| [GenericSum][6-Practice-1]<p>[Bucketable][6-Practice-2] 	| [Generics][6-Homework] | 
 | [`7`] | Функции высшего порядка | - | - | 
 | [`8`] | Обработка ошибок в Swift | - | - | 
 | [`9`] | Шаблоны проектирования | - | - | 
@@ -66,3 +66,9 @@
 [5-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/5.md
 [5-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/5/String_function/String_function/main.swift
 [5-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/StringCalculator.md
+
+[6-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/6.pdf
+[6-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/6.md
+[6-Practice-1]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/6/GenericSum/GenericSum/main.swift
+[6-Practice-2]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/6/Bucketable/Bucketable/main.swift
+[6-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/Generics.md
