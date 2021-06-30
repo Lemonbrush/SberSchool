@@ -9,7 +9,7 @@
 | [`4`][4-preseentation] | [Коллекции, closures в Swift][4-Lecture] 									| [Hashable][4-Practice-1]<p>[Sort][4-Practice-2]			| [Multiset][4-Homework] 						|  
 | [`5`][5-preseentation] | [Работа со строками, работа с протоколами, диспетчеризация Swift][5-Lecture] | [String_function][5-Practice] 				 			| [StringCalculator][5-Homework]				|  
 | [`6`][6-preseentation] | [Generics][6-Lecture]  														| [GenericSum][6-Practice-1]<p>[Bucketable][6-Practice-2] 	| [Generics][6-Homework] | 
-| [`7`] | Функции высшего порядка | - | - | 
+| [`7`][7-preseentation] | [Функции высшего порядка][7-Lecture] 										| [Filter][7-Practice] 										| - | 
 | [`8`] | Обработка ошибок в Swift | - | - | 
 | [`9`] | Шаблоны проектирования | - | - | 
 | [`10`] | Виды контроллеров. Жизненный цикл UIViewController | - | - | 
@@ -72,3 +72,8 @@
 [6-Practice-1]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/6/GenericSum/GenericSum/main.swift
 [6-Practice-2]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/6/Bucketable/Bucketable/main.swift
 [6-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/Generics.md
+
+[7-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/7.pdf
+[7-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/7.md
+[7-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/7/Filter/Filter/main.swift
+[7-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/?.md
