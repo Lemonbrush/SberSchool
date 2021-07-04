@@ -12,10 +12,15 @@ enum TaskError: Error {
     case badTask
 }
 
+enum CheckResult {
+    case Message(_ message: String)
+    case TooMuchMistakes(_ mistakes: [String])
+}
+
 // MARK: - Main functions
 
-func checkHomeWork(_ tasks: [String]) -> String {
-    guard tasks.count > 0 else { return "нет примеров" }
+func checkHomeWork(_ tasks: [String]) -> CheckResult {
+    guard tasks.count > 0 else { return CheckResult.Message("нет примеров") }
     
     var errors = [String]()
     var rightAnswers = [String]()
@@ -30,7 +35,7 @@ func checkHomeWork(_ tasks: [String]) -> String {
                 
                 switch safeError {
                 case .badTask:
-                    return "переделывай"
+                    return CheckResult.Message("переделывай")
                 case .wrongAnswer(properAnswer: _):
                     errors.append(task)
                 }
@@ -40,9 +45,14 @@ func checkHomeWork(_ tasks: [String]) -> String {
         
     }
     
+    // Check if there 75% of mistakes
+    let percentage: Double = (Double(tasks.count)/100) * 75
+    if Double(errors.count) > percentage  {
+        errors.append("делай заново")
+        return CheckResult.TooMuchMistakes(errors)
+    }
     
-    
-    return "result"
+    return CheckResult.Message("Молодец")
 }
 
 func checkTask(_ str: String) throws -> String {
@@ -96,7 +106,44 @@ func calculate(leftNum: String, rightNum: String, operation: String) throws -> D
 
 // MARK: - Test
 
-let tasks = ["1 + 2 = 5", "4 + 6 = 0"]
+let emptyTasks = [String]()
+let rightTasks = ["1 + 2 = 3",
+             "4 + 6 = 10",
+             "4 + 6 = 10",
+             "4 + 6 = 10",
+             "4 + 6 = 10",
+             "4 + 6 = 10",
+             "4 + 6 = 10",
+             "4 + 6 = 10",
+             "4 + 6 = 10",
+             "4 + 6 = 10"]
 
-print(checkHomeWork(tasks))
+let mistakenTasks = ["1 + 2 = 3",
+             "4 + 6 = 10",
+             "4 + 6 = 0",
+             "4 + 6 = 0",
+             "4 + 6 = 0",
+             "4 + 6 = 0",
+             "4 + 6 = 0",
+             "4 + 6 = 0",
+             "4 + 6 = 0",
+             "4 + 6 = 0"]
 
+let invalidTasks = ["1 + 2 = 3",
+             "4 + 6 = 10",
+             "4 + 6 = 0",
+             "4 + 6 = 0",
+             "4 + 6 = 0",
+             "4 + 6 = 0",
+             "---------",
+             "4 + 6 = 0",
+             "4 + 6 = 0",
+             "4 + 6 = 0"]
+
+print(checkHomeWork(rightTasks)) //All tasks are right
+
+print(checkHomeWork(emptyTasks)) //Empty tasks
+
+print(checkHomeWork(mistakenTasks)) //Tasks with mistakes
+
+print(checkHomeWork(invalidTasks)) //Tasks with an invalid string
