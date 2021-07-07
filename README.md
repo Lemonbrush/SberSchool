@@ -2,17 +2,17 @@
 
 | №/PPT | Lecture/Note | Practice | Homework |
 | :--- | :--- | :--- | :--- |
-|  `0` |[Знакомство со школой][0-Lecture]																| - 											 				| - 											|     
-| [`1`][1-preseentation] | [Архитектура iOS. Жизненный цикл приложения][1-Lecture] 						| - 											 				| - 											|  
-| [`2`][2-preseentation] | [Основы git][2-Lecture] 														| - 															| [Эссе][2-Homework] 							|   
-| [`3`][3-preseentation] | [Конструкции языка, Optional, типы данных в Swift][3-Lecture] 				| [PropertyWrapper][3-Practice] 				 				| [CopyOnWrite на reference type][3-Homework] 	|  
-| [`4`][4-preseentation] | [Коллекции, closures в Swift][4-Lecture] 									| [Hashable][4-Practice-1]<p>[Sort][4-Practice-2]				| [Multiset][4-Homework] 						|  
-| [`5`][5-preseentation] | [Работа со строками, работа с протоколами, диспетчеризация Swift][5-Lecture] | [String_function][5-Practice] 				 				| [StringCalculator][5-Homework]				|  
-| [`6`][6-preseentation] | [Generics][6-Lecture]  														| [GenericSum][6-Practice-1]<p>[Bucketable][6-Practice-2] 		| [Generics][6-Homework] 						| 
-| [`7`][7-preseentation] | [Функции высшего порядка][7-Lecture] 										| [Filter][7-Practice] 											| [HigherOrderFunctions][7-Homework]			| 
-| [`8`][8-preseentation] | [Обработка ошибок в Swift][8-Lecture] 										| - 															| [ErrorHandling][8-Homework]					| 
-| [`9`][9-preseentation] | [Шаблоны проектирования][9-Lecture] 											| [Builder][9-Practice-1]<p>[BuilderAndDecorator][9-Practice-2] | [Patterns][9-Homework] 						| 
-| [`10`] | Виды контроллеров. Жизненный цикл UIViewController | - | - | 
+|  `0` |[Знакомство со школой][0-Lecture]																	| - 											 				| - 											|     
+| [`1`][1-preseentation] 	| [Архитектура iOS. Жизненный цикл приложения][1-Lecture] 						| - 											 				| - 											|  
+| [`2`][2-preseentation] 	| [Основы git][2-Lecture] 														| - 															| [Эссе][2-Homework] 							|   
+| [`3`][3-preseentation] 	| [Конструкции языка, Optional, типы данных в Swift][3-Lecture] 				| [PropertyWrapper][3-Practice] 				 				| [CopyOnWrite на reference type][3-Homework] 	|  
+| [`4`][4-preseentation] 	| [Коллекции, closures в Swift][4-Lecture] 										| [Hashable][4-Practice-1]<p>[Sort][4-Practice-2]				| [Multiset][4-Homework] 						|  
+| [`5`][5-preseentation] 	| [Работа со строками, работа с протоколами, диспетчеризация Swift][5-Lecture] 	| [String_function][5-Practice] 				 				| [StringCalculator][5-Homework]				|  
+| [`6`][6-preseentation] 	| [Generics][6-Lecture]  														| [GenericSum][6-Practice-1]<p>[Bucketable][6-Practice-2] 		| [Generics][6-Homework] 						| 
+| [`7`][7-preseentation] 	| [Функции высшего порядка][7-Lecture] 											| [Filter][7-Practice] 											| [HigherOrderFunctions][7-Homework]			| 
+| [`8`][8-preseentation] 	| [Обработка ошибок в Swift][8-Lecture] 										| - 															| [ErrorHandling][8-Homework]					| 
+| [`9`][9-preseentation]	| [Шаблоны проектирования][9-Lecture] 											| [Builder][9-Practice-1]<p>[BuilderAndDecorator][9-Practice-2] | [Patterns][9-Homework] 						| 
+| [`10`][10-preseentation]  | [Виды контроллеров. Жизненный цикл UIViewController][10-Lecture] 				| [UINavigationController][10-Practice-1]<p>[UITabbarViewController][10-Practice-2] | [ActivityView][10-Homework] | 
 | [`11`] | MVC от Apple | - | - | 
 | [`12`] | Autolayout | - | - | 
 | [`13`] | UIView анимации, CoreAnimation, Property Animation, UIKitDynamics | - | - |  
@@ -87,3 +87,17 @@
 [9-Practice-1]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/9/Builder/Builder
 [9-Practice-2]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/9/BuilderAndDecorator
 [9-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/Patterns.md
+
+[10-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/10.pdf
+[10-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/10.md
+[10-Practice-1]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/10/UINavigationController
+[10-Practice-2]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/10/UITabbarViewController
+[10-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/ActivityView.md
+
+
+
+[11-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/10.pdf
+[11-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/10.md
+[11-Practice-1]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/10/
+[11-Practice-2]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/10/
+[11-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/?.md
