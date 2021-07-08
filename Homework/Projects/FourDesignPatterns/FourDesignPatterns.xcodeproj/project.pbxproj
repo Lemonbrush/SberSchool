@@ -14,6 +14,10 @@
 		DDAB90F02694E9CE003E8B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAB90EF2694E9CE003E8B1A /* Assets.xcassets */; };
 		DDAB90F32694E9CE003E8B1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAB90F12694E9CE003E8B1A /* LaunchScreen.storyboard */; };
 		DDAB90FF2694F2CC003E8B1A /* NotificationSenderMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB90FE2694F2CC003E8B1A /* NotificationSenderMediator.swift */; };
+		DDAB9123269768BC003E8B1A /* SubscribableUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB9122269768BC003E8B1A /* SubscribableUnit.swift */; };
+		DDAB912526976DDA003E8B1A /* SubscribableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB912426976DDA003E8B1A /* SubscribableButton.swift */; };
+		DDAB9127269782F2003E8B1A /* MementoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB9126269782F2003E8B1A /* MementoButton.swift */; };
+		DDAB912A269784F0003E8B1A /* UndoMementoStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB9129269784F0003E8B1A /* UndoMementoStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		DDAB90F22694E9CE003E8B1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDAB90F42694E9CE003E8B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDAB90FE2694F2CC003E8B1A /* NotificationSenderMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSenderMediator.swift; sourceTree = "<group>"; };
+		DDAB9122269768BC003E8B1A /* SubscribableUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribableUnit.swift; sourceTree = "<group>"; };
+		DDAB912426976DDA003E8B1A /* SubscribableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribableButton.swift; sourceTree = "<group>"; };
+		DDAB9126269782F2003E8B1A /* MementoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoButton.swift; sourceTree = "<group>"; };
+		DDAB9129269784F0003E8B1A /* UndoMementoStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoMementoStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +68,8 @@
 			children = (
 				DDAB90E62694E9CD003E8B1A /* AppDelegate.swift */,
 				DDAB90E82694E9CD003E8B1A /* SceneDelegate.swift */,
-				DDAB91002694FA40003E8B1A /* Mediator */,
+				DDAB912126976855003E8B1A /* SubscribableUnit */,
+				DDAB91002694FA40003E8B1A /* Mediator+Singleton */,
 				DDAB90FA2694EC74003E8B1A /* View */,
 				DDAB90EC2694E9CD003E8B1A /* Main.storyboard */,
 				DDAB90EF2694E9CE003E8B1A /* Assets.xcassets */,
@@ -78,12 +87,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		DDAB91002694FA40003E8B1A /* Mediator */ = {
+		DDAB91002694FA40003E8B1A /* Mediator+Singleton */ = {
 			isa = PBXGroup;
 			children = (
 				DDAB90FE2694F2CC003E8B1A /* NotificationSenderMediator.swift */,
 			);
-			path = Mediator;
+			path = "Mediator+Singleton";
+			sourceTree = "<group>";
+		};
+		DDAB912126976855003E8B1A /* SubscribableUnit */ = {
+			isa = PBXGroup;
+			children = (
+				DDAB9122269768BC003E8B1A /* SubscribableUnit.swift */,
+				DDAB9128269782FA003E8B1A /* Buttons */,
+				DDAB9129269784F0003E8B1A /* UndoMementoStack.swift */,
+			);
+			path = SubscribableUnit;
+			sourceTree = "<group>";
+		};
+		DDAB9128269782FA003E8B1A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				DDAB912426976DDA003E8B1A /* SubscribableButton.swift */,
+				DDAB9126269782F2003E8B1A /* MementoButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDAB90FF2694F2CC003E8B1A /* NotificationSenderMediator.swift in Sources */,
+				DDAB9127269782F2003E8B1A /* MementoButton.swift in Sources */,
+				DDAB912A269784F0003E8B1A /* UndoMementoStack.swift in Sources */,
+				DDAB9123269768BC003E8B1A /* SubscribableUnit.swift in Sources */,
 				DDAB90EB2694E9CD003E8B1A /* NotificationSenderView.swift in Sources */,
 				DDAB90E72694E9CD003E8B1A /* AppDelegate.swift in Sources */,
+				DDAB912526976DDA003E8B1A /* SubscribableButton.swift in Sources */,
 				DDAB90E92694E9CD003E8B1A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
