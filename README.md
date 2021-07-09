@@ -13,7 +13,7 @@
 | [`8`][8-preseentation] 	| [Обработка ошибок в Swift][8-Lecture] 										| - 															| [ErrorHandling][8-Homework]					| 
 | [`9`][9-preseentation]	| [Шаблоны проектирования][9-Lecture] 											| [Builder][9-Practice-1]<p>[BuilderAndDecorator][9-Practice-2] | [Patterns][9-Homework] 						| 
 | [`10`][10-preseentation]  | [Виды контроллеров. Жизненный цикл UIViewController][10-Lecture] 				| [UINavigationController][10-Practice-1]<p>[UITabbarViewController][10-Practice-2] | [ActivityView][10-Homework] | 
-| [`11`] | MVC от Apple | - | - | 
+| [`11`][11-preseentation] 	| [MVC от Apple][11-preseentation] 												| [MVC][11-Practice]											| - | 
 | [`12`] | Autolayout | - | - | 
 | [`13`] | UIView анимации, CoreAnimation, Property Animation, UIKitDynamics | - | - |  
 | [`14`] | UIKit основы, Responder Chain | - | - | 
@@ -94,10 +94,7 @@
 [10-Practice-2]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/10/UITabbarViewController
 [10-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/ActivityView.md
 
-
-
-[11-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/10.pdf
-[11-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/10.md
-[11-Practice-1]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/10/
-[11-Practice-2]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/10/
+[11-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/11.pdf
+[11-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/11.md
+[11-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/11/
 [11-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/?.md
