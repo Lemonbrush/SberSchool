@@ -1,0 +1,37 @@
+//
+//  ViewController.swift
+//  ActivityView
+//
+//  Created by Alexander Rubtsov on 10.07.2021.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+    
+    var mainView = MainView()
+
+    //MARK: - Lifecycle
+    
+    override func loadView() {
+        super.loadView()
+        
+        self.view = mainView
+        mainView.viewController = self
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+
+    //MARK: - Functions
+    
+    func showActivityView(with image: UIImage) {
+        let items = [image]
+        let activityView = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        activityView.excludedActivityTypes = [.postToFlickr, .postToVimeo, .saveToCameraRoll, .assignToContact]
+        
+        present(activityView, animated: true, completion: nil)
+    }
+}
