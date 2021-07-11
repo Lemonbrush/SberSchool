@@ -2,7 +2,7 @@
 
 | №/PPT | Lecture/Note | Practice | Homework |
 | :--- | :--- | :--- | :--- |
-|  `0` |[Знакомство со школой][0-Lecture]																	| - 											 				| - 											|     
+|  `0` |[Знакомство со школой][0-Lecture]																	| - 											 				| - 											|    
 | [`1`][1-preseentation] 	| [Архитектура iOS. Жизненный цикл приложения][1-Lecture] 						| - 											 				| - 											|  
 | [`2`][2-preseentation] 	| [Основы git][2-Lecture] 														| - 															| [Эссе][2-Homework] 							|   
 | [`3`][3-preseentation] 	| [Конструкции языка, Optional, типы данных в Swift][3-Lecture] 				| [PropertyWrapper][3-Practice] 				 				| [CopyOnWrite на reference type][3-Homework] 	|  
@@ -13,7 +13,7 @@
 | [`8`][8-preseentation] 	| [Обработка ошибок в Swift][8-Lecture] 										| - 															| [ErrorHandling][8-Homework]					| 
 | [`9`][9-preseentation]	| [Шаблоны проектирования][9-Lecture] 											| [Builder][9-Practice-1]<p>[BuilderAndDecorator][9-Practice-2] | [Patterns][9-Homework] 						| 
 | [`10`][10-preseentation]  | [Виды контроллеров. Жизненный цикл UIViewController][10-Lecture] 				| [UINavigationController][10-Practice-1]<p>[UITabbarViewController][10-Practice-2] | [ActivityView][10-Homework] | 
-| [`11`][11-preseentation] 	| [MVC от Apple][11-preseentation] 												| [MVC][11-Practice]											| - | 
+| [`11`][11-preseentation] 	| [MVC от Apple][11-Lecture] 													| [MVC][11-Practice]											| [MVCColors][11-Homework]						| 
 | [`12`] | Autolayout | - | - | 
 | [`13`] | UIView анимации, CoreAnimation, Property Animation, UIKitDynamics | - | - |  
 | [`14`] | UIKit основы, Responder Chain | - | - | 
@@ -96,5 +96,5 @@
 
 [11-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/11.pdf
 [11-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/11.md
-[11-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/11/
-[11-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/?.md
+[11-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/11
+[11-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/MVCColors.md
