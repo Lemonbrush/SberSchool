@@ -49,6 +49,10 @@ class MainView: UIView {
         viewController?.showActivityView(with: safeImage)
     }
     
+    func purrMode() {
+        imageView.image = UIImage(named: "cat2")
+    }
+    
     func setConstraints() {
         
         //Stack View

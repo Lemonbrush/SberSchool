@@ -29,7 +29,13 @@ class ViewController: UIViewController {
     
     func showActivityView(with image: UIImage) {
         let items = [image]
-        let activityView = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        
+        //custom item
+        let customItem = MySuperActivity(title: "Frrrrrrr...", image: UIImage(systemName: "heart.fill")) { sharedItems in
+            self.mainView.purrMode()
+        }
+        
+        let activityView = UIActivityViewController(activityItems: items, applicationActivities: [customItem])
         activityView.excludedActivityTypes = [.postToFlickr, .postToVimeo, .saveToCameraRoll, .assignToContact]
         
         present(activityView, animated: true, completion: nil)

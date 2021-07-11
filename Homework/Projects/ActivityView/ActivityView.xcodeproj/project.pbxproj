@@ -13,6 +13,7 @@
 		DDAB91682698F667003E8B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAB91672698F667003E8B1A /* Assets.xcassets */; };
 		DDAB916B2698F667003E8B1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAB91692698F667003E8B1A /* LaunchScreen.storyboard */; };
 		DDAB91752698F90A003E8B1A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB91742698F90A003E8B1A /* MainView.swift */; };
+		DDAB9177269B0FB3003E8B1A /* MySuperActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB9176269B0FB3003E8B1A /* MySuperActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DDAB916A2698F667003E8B1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDAB916C2698F667003E8B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDAB91742698F90A003E8B1A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DDAB9176269B0FB3003E8B1A /* MySuperActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySuperActivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				DDAB915E2698F666003E8B1A /* AppDelegate.swift */,
 				DDAB91602698F666003E8B1A /* SceneDelegate.swift */,
+				DDAB9176269B0FB3003E8B1A /* MySuperActivity.swift */,
 				DDAB91732698F8E2003E8B1A /* Controller */,
 				DDAB91722698F8DA003E8B1A /* View */,
 				DDAB91672698F667003E8B1A /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAB9177269B0FB3003E8B1A /* MySuperActivity.swift in Sources */,
 				DDAB91632698F666003E8B1A /* ViewController.swift in Sources */,
 				DDAB91752698F90A003E8B1A /* MainView.swift in Sources */,
 				DDAB915F2698F666003E8B1A /* AppDelegate.swift in Sources */,
