@@ -23,6 +23,15 @@ class RootViewController: UIViewController {
     
     @objc func nextVC() {
         let vc = UIViewController()
+        
+        let transition = CATransition()
+        transition.duration = 1.5
+        transition.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+        transition.type = .push
+        transition.subtype = .fromTop
+        
+        navigationController?.view.layer.add(transition, forKey: "transition")
+        
         navigationController?.pushViewController(vc, animated: true)
     }
 }
