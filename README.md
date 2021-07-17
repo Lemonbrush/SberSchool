@@ -16,7 +16,7 @@
 | [`11`][11-preseentation] 	| [MVC от Apple][11-Lecture] 													| [MVC][11-Practice]											| [MVCColors][11-Homework]						| 
 | [`12`][12-preseentation]	| [Autolayout][12-Lecture]														| [Autolayout][12-Practice] 									| - 											| 
 | [`13`][13-preseentation] 	| [UIView анимации, CoreAnimation, Property Animation, UIKitDynamics][13-Lecture] | [ButtonAnimation][13-Practice-1]<p>[Transition][13-Practice-2] | [Animations][13-Homework] 					|  
-| [`14`] | UIKit основы, Responder Chain | - | - | 
+| [`14`][14-preseentation] 	| [UIKit основы, Responder Chain][14-Lecture] 									| [Gesture][14-Practice]					 					| [GestureBagel][14-Homework]					| 
 | [`15`] | UITableView | - | - | 
 | [`16`] | UICollectionView | - | - | 
 | [`17`] | Работа с сетью. NSURLSession/NSURLRequestХранилище | - | - | 
@@ -108,3 +108,8 @@
 [13-Practice-1]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/13/ButtonAnimation
 [13-Practice-2]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/13/Transition
 [13-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/Animations.md
+
+[14-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/14.pdf
+[14-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/14.md
+[14-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/14/Gesture
+[14-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/GestureBagel.md
