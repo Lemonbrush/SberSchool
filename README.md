@@ -14,8 +14,8 @@
 | [`9`][9-preseentation]	| [Шаблоны проектирования][9-Lecture] 											| [Builder][9-Practice-1]<p>[BuilderAndDecorator][9-Practice-2] | [Patterns][9-Homework] 						| 
 | [`10`][10-preseentation]  | [Виды контроллеров. Жизненный цикл UIViewController][10-Lecture] 				| [UINavigationController][10-Practice-1]<p>[UITabbarViewController][10-Practice-2] | [ActivityView][10-Homework] | 
 | [`11`][11-preseentation] 	| [MVC от Apple][11-Lecture] 													| [MVC][11-Practice]											| [MVCColors][11-Homework]						| 
-| [`12`][12-preseentation]	| [Autolayout][12-Lecture]														| [Autolayout][12-Practice] 									| - | 
-| [`13`] | UIView анимации, CoreAnimation, Property Animation, UIKitDynamics | - | - |  
+| [`12`][12-preseentation]	| [Autolayout][12-Lecture]														| [Autolayout][12-Practice] 									| - 											| 
+| [`13`][13-preseentation] 	| [UIView анимации, CoreAnimation, Property Animation, UIKitDynamics][13-Lecture] | [ButtonAnimation][13-Practice-1]<p>[Transition][13-Practice-2] | [Animations][13-Homework] 					|  
 | [`14`] | UIKit основы, Responder Chain | - | - | 
 | [`15`] | UITableView | - | - | 
 | [`16`] | UICollectionView | - | - | 
@@ -102,3 +102,9 @@
 [12-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/12.pdf
 [12-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/12.md
 [12-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/12
+
+[13-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/13.pdf
+[13-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/13.md
+[13-Practice-1]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/13/ButtonAnimation
+[13-Practice-2]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/13/Transition
+[13-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/Animations.md
