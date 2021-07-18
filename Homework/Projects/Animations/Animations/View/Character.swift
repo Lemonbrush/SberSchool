@@ -9,6 +9,8 @@ import UIKit
 
 class Character: UIView {
     
+    var animationView: AnimationsView?
+    
     var finalDestination: CGPoint = CGPoint(x: 0, y: 0)
     var velocity: CGFloat = 5
     
@@ -64,6 +66,8 @@ class Character: UIView {
             timer?.invalidate()
             layer.removeAllAnimations()
         }
+        
+        animationView?.characterMoved(position: currentPosition) // inform owner that character moved
     }
     
     //MARK: - Helper functions
