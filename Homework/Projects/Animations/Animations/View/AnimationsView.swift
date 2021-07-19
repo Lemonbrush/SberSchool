@@ -61,19 +61,12 @@ class AnimationsView: UIView {
         
         let feedBallWidth = Float(feedBall.frame.width)
         let feedBallHeight = Float(feedBall.frame.height)
+
+        let characterBottomRightCorner = CGPoint(x: character.frame.minX + CGFloat(charWidth), y: character.frame.minY + CGFloat(charHeight))
+        let feedBallBottomRightCorner = CGPoint(x: feedBall.frame.minX + CGFloat(feedBallWidth), y: feedBall.frame.minY + CGFloat(feedBallHeight))
         
-        let charPosition = CGPoint(x: character.frame.minX - CGFloat(charWidth)/2, y: character.frame.minY - CGFloat(charHeight)/2)
-        let feedBallPosition = CGPoint(x: feedBall.frame.minX - CGFloat(feedBallWidth)/2, y: feedBall.frame.minY - CGFloat(feedBallHeight)/2)
-        
-        let characterTopLeftCorner = CGPoint(x: character.frame.maxX, y: character.frame.minY)
-        let characterTopRightCorner = CGPoint(x: character.frame.minX + CGFloat(charWidth), y: character.frame.minY)
-        let characterBottomLeftCorner = CGPoint(x: character.frame.minX, y: character.frame.maxY + CGFloat(charHeight))
-        let characterBottomRightCorner = CGPoint(x: character.frame.maxX + CGFloat(charHeight), y: character.frame.maxY + CGFloat(charHeight))
-        
-        let feedBallBottomRightCorner = CGPoint(x: feedBall.frame.minX + CGFloat(feedBallWidth), y: feedBall.frame.maxY + CGFloat(feedBallHeight))
-        
-        if isOverlap(l1: characterTopLeftCorner,
-                     l2: CGPoint(x: feedBall.frame.minX, y: feedBall.frame.maxY),
+        if isOverlap(l1: CGPoint(x: character.frame.minX, y: character.frame.minY),
+                     l2: CGPoint(x: feedBall.frame.minX, y: feedBall.frame.minY),
                      r1: characterBottomRightCorner,
                      r2: feedBallBottomRightCorner) {
             putNewFeedBall()
@@ -83,7 +76,11 @@ class AnimationsView: UIView {
     func isOverlap(l1: CGPoint, l2: CGPoint, r1: CGPoint, r2: CGPoint) -> Bool {
         print("l1.x = \(l1.x)\nr2.x = \(r2.x)\nl2.x = \(l2.x)\nr1.x = \(r1.x)\n\n")
         
-        if (l1.x >= r2.x || l2.x >= r1.x) && (r1.y >= l2.y || r2.y >= l1.y) {
+        if (l1.x >= r2.x || l2.x >= r1.x) {
+            return false
+        }
+        
+        if (r1.y <= l2.y || r2.y <= l1.y) {
             return false
         }
         
