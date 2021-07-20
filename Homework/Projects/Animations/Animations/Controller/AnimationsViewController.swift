@@ -10,6 +10,7 @@ import UIKit
 class AnimationsViewController: UIViewController {
     
     var mainView = AnimationsView()
+    var gameManager = GameManager()
 
     //MARK: - Lifecycle
     
@@ -21,7 +22,7 @@ class AnimationsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        gameManager.delegate = self
     }
     
     override func viewDidLayoutSubviews() {
@@ -40,7 +41,13 @@ class AnimationsViewController: UIViewController {
 
 }
 
-extension AnimationsViewController: AnimationControllerDelegate {
-
+extension AnimationsViewController: GameManagerProtocol {
+    func updateScore(with newScore: Int) {
+        mainView.updateScore(with: newScore)
+    }
+    
+    func ateFeedBall() {
+        gameManager.increaseScore()
+    }
 }
 

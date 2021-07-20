@@ -7,15 +7,18 @@
 
 import UIKit
 
-protocol AnimationControllerDelegate {
-    
-}
-
 class AnimationsView: UIView {
 
-    var viewController: AnimationControllerDelegate?
+    var viewController: GameManagerProtocol?
     
     let character = Character()
+    
+    var scoreLabel: UILabel = {
+       let label = UILabel(frame: CGRect(x: 40, y: 10, width: 700, height: 100))
+        label.text = "Score: 0"
+        label.font = UIFont(name: "Arial Rounded MT Bold", size: 20)
+        return label
+    }()
     
     let feedBall: UIView = {
         let ballSize = 60
@@ -39,20 +42,19 @@ class AnimationsView: UIView {
         addSubview(character)
         addSubview(feedBall)
         
+        addSubview(scoreLabel)
+        
         character.animationView = self
+    }
+    
+    override func layoutSubviews() {
+        setUpConstraints()
     }
 
     //MARK: - Functions
     
     func positionChanged(to newPosition: CGPoint) {
         character.positionChanged(to: newPosition)
-    }
-    
-    func prepareGame() {
-        character.frame = CGRect(x: frame.width/2 - character.frame.width/2,
-                                 y: frame.height/2 - character.frame.height/2,
-                                 width: character.frame.width,
-                                 height: character.frame.height)
     }
     
     func characterMoved(position: CGPoint) {
@@ -73,8 +75,34 @@ class AnimationsView: UIView {
         }
     }
     
+    func updateScore(with newScore: Int) {
+        scoreLabel.text = "Score: \(newScore)"
+    }
+    
+    //MARK: - Game logic
+    
+    func putNewFeedBall() {
+        
+        let screenWidth = UIScreen.main.bounds.width
+        let screenHeight = UIScreen.main.bounds.height
+        
+        feedBall.frame = CGRect(x: CGFloat.random(in: 0..<screenWidth-feedBall.frame.width*2),
+                                y: CGFloat.random(in: 0..<screenHeight-feedBall.frame.height*2),
+                                width: feedBall.frame.width,
+                                height: feedBall.frame.height)
+        viewController?.ateFeedBall()
+    }
+    
+    //MARK: - Helper functions
+    
+    func prepareGame() {
+        character.frame = CGRect(x: frame.width/2 - character.frame.width/2,
+                                 y: frame.height/2 - character.frame.height/2,
+                                 width: character.frame.width,
+                                 height: character.frame.height)
+    }
+    
     func isOverlap(l1: CGPoint, l2: CGPoint, r1: CGPoint, r2: CGPoint) -> Bool {
-        print("l1.x = \(l1.x)\nr2.x = \(r2.x)\nl2.x = \(l2.x)\nr1.x = \(r1.x)\n\n")
         
         if (l1.x >= r2.x || l2.x >= r1.x) {
             return false
@@ -87,16 +115,13 @@ class AnimationsView: UIView {
         return true
     }
     
-    //MARK: - Game logic
-    
-    func putNewFeedBall() {
+    func setUpConstraints() {
+        //scoreLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        let screenWidth = UIScreen.main.bounds.width
-        let screenHeight = UIScreen.main.bounds.height
+        //scoreLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        //scoreLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
         
-        feedBall.frame = CGRect(x: CGFloat.random(in: 0..<screenWidth-feedBall.frame.width),
-                                y: CGFloat.random(in: 0..<screenHeight-feedBall.frame.height),
-                                width: feedBall.frame.width,
-                                height: feedBall.frame.height)
+        //scoreLabel.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        //scoreLabel.widthAnchor.constraint(equalToConstant: 300).isActive = true
     }
 }
