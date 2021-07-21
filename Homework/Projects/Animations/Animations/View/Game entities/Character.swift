@@ -33,6 +33,10 @@ class Character: UIView {
     }
     
     //MARK: - Functions
+    func ateFeedBall() {
+        frame = CGRect(x: frame.minX, y: frame.minY, width: frame.width + 5, height: frame.height + 5)
+        layer.cornerRadius = frame.width/2
+    }
     
     func positionChanged(to newPosition: CGPoint) {
 
@@ -61,43 +65,19 @@ class Character: UIView {
                                  height: currentSize)
         
         let currentPosition = CGPoint(x: currentX, y: currentY)
+        
+        animationView?.characterMoved(position: currentPosition) // inform owner that character moved
 
         if currentPosition == finalDestination {
             timer?.invalidate()
             layer.removeAllAnimations()
         }
-        
-        animationView?.characterMoved(position: currentPosition) // inform owner that character moved
     }
     
     //MARK: - Helper functions
     
     func applyMoveAnimation() {
-        let squishAmount = 0.8
-        
-        let squash = CABasicAnimation(keyPath: "transform")
-        squash.valueFunction = CAValueFunction(name: .scale)
-        squash.fromValue = [1, 1, 1]
-        squash.toValue = [1.2, squishAmount, 1.2]
-        
-        let sqush = CABasicAnimation(keyPath: "transform")
-        sqush.valueFunction = CAValueFunction(name: .scale)
-        sqush.fromValue = [1.2, squishAmount, 1.2]
-        sqush.toValue = [squishAmount, 1.2, squishAmount]
-        
-        let squish = CABasicAnimation(keyPath: "transform")
-        squish.valueFunction = CAValueFunction(name: .scale)
-        squish.fromValue = [squishAmount, 1.2, squishAmount]
-        squish.toValue = [1, 1, 1]
-        
-        let animations = CAAnimationGroup()
-        animations.duration = 0.5
-        animations.repeatCount = .greatestFiniteMagnitude
-        animations.timingFunction = CAMediaTimingFunction(name: .linear)
-        animations.animations = [squash, sqush, squish]
-        animations.autoreverses = true
-        
-        layer.add(animations, forKey: nil)
+        layer.add(Animations.getSquishSquoshAnimation(), forKey: nil)
     }
     
     func sum(_ a: CGFloat, _ b: CGFloat, max: CGFloat) -> CGFloat {

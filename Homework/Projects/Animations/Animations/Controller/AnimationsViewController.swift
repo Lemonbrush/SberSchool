@@ -9,6 +9,7 @@ import UIKit
 
 class AnimationsViewController: UIViewController {
     
+    var isGameJustStarted = true
     var mainView = AnimationsView()
     var gameManager = GameManager()
 
@@ -26,7 +27,10 @@ class AnimationsViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        mainView.prepareGame()
+        if isGameJustStarted {
+            mainView.prepareGame()
+            isGameJustStarted.toggle()
+        }
     }
     
     //MARK: - Helper functions 
@@ -37,8 +41,6 @@ class AnimationsViewController: UIViewController {
         let touchPosition = CGPoint(x: touchLocation.x, y: touchLocation.y)
         mainView.positionChanged(to: touchPosition)
     }
-
-
 }
 
 extension AnimationsViewController: GameManagerProtocol {

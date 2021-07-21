@@ -12,20 +12,14 @@ class AnimationsView: UIView {
     var viewController: GameManagerProtocol?
     
     let character = Character()
+    var feedBall = FeedBall()
     
     var scoreLabel: UILabel = {
-       let label = UILabel(frame: CGRect(x: 40, y: 10, width: 700, height: 100))
+       let label = UILabel(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         label.text = "Score: 0"
         label.font = UIFont(name: "Arial Rounded MT Bold", size: 20)
+        label.textAlignment = .center
         return label
-    }()
-    
-    let feedBall: UIView = {
-        let ballSize = 60
-        let view = UIView(frame: CGRect(x: 100, y: 100, width: ballSize, height: ballSize))
-        view.backgroundColor = .systemYellow
-        view.layer.cornerRadius = CGFloat(ballSize/2)
-        return view
     }()
     
     // MARK: - Init
@@ -71,7 +65,9 @@ class AnimationsView: UIView {
                      l2: CGPoint(x: feedBall.frame.minX, y: feedBall.frame.minY),
                      r1: characterBottomRightCorner,
                      r2: feedBallBottomRightCorner) {
-            putNewFeedBall()
+            character.ateFeedBall()
+            viewController?.ateFeedBall()
+            relocateFeedBall()
         }
     }
     
@@ -81,7 +77,7 @@ class AnimationsView: UIView {
     
     //MARK: - Game logic
     
-    func putNewFeedBall() {
+    private func relocateFeedBall() {
         
         let screenWidth = UIScreen.main.bounds.width
         let screenHeight = UIScreen.main.bounds.height
@@ -90,19 +86,20 @@ class AnimationsView: UIView {
                                 y: CGFloat.random(in: 0..<screenHeight-feedBall.frame.height*2),
                                 width: feedBall.frame.width,
                                 height: feedBall.frame.height)
-        viewController?.ateFeedBall()
     }
-    
-    //MARK: - Helper functions
     
     func prepareGame() {
         character.frame = CGRect(x: frame.width/2 - character.frame.width/2,
                                  y: frame.height/2 - character.frame.height/2,
                                  width: character.frame.width,
                                  height: character.frame.height)
+        
+        relocateFeedBall()
     }
     
-    func isOverlap(l1: CGPoint, l2: CGPoint, r1: CGPoint, r2: CGPoint) -> Bool {
+    //MARK: - Helper functions
+    
+    private func isOverlap(l1: CGPoint, l2: CGPoint, r1: CGPoint, r2: CGPoint) -> Bool {
         
         if (l1.x >= r2.x || l2.x >= r1.x) {
             return false
@@ -115,13 +112,13 @@ class AnimationsView: UIView {
         return true
     }
     
-    func setUpConstraints() {
-        //scoreLabel.translatesAutoresizingMaskIntoConstraints = false
+    private func setUpConstraints() {
+        scoreLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        //scoreLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        //scoreLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
+        scoreLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        scoreLabel.topAnchor.constraint(equalTo: topAnchor, constant: 20).isActive = true
         
-        //scoreLabel.heightAnchor.constraint(equalToConstant: 100).isActive = true
-        //scoreLabel.widthAnchor.constraint(equalToConstant: 300).isActive = true
+        scoreLabel.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        scoreLabel.widthAnchor.constraint(equalToConstant: 300).isActive = true
     }
 }
