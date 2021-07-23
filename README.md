@@ -18,7 +18,7 @@
 | [`13`][13-preseentation] 	| [UIView анимации, CoreAnimation, Property Animation, UIKitDynamics][13-Lecture] | [ButtonAnimation][13-Practice-1]<p>[Transition][13-Practice-2] | [Animations][13-Homework] 					|  
 | [`14`][14-preseentation] 	| [UIKit основы, Responder Chain][14-Lecture] 									| [Gesture][14-Practice]					 					| [GestureBagel][14-Homework]					| 
 | [`15`][15-16-preseentation] | [UITableView][15-Lecture]													| [Collections][15-Practice]									| [To-Do list][15-Homework]						| 
-| [`16`] | UICollectionView | - | - | 
+| [`16`][15-16-preseentation] | [UICollectionView][16-Lecture]												| [Collections2][16-Practice] 									| [DrawingApp 😱][16-Homework]] 				| 
 | [`17`] | Работа с сетью. NSURLSession/NSURLRequestХранилище | - | - | 
 | [`18`] | Обзор MVC, MVVM, MVP, VIPER, Чистая архитектура | - | - | 
 | [`19`] | Работа с камерой и галереей. Афинные преобразования и фильтры | - | - | 
@@ -118,3 +118,7 @@
 [15-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/15.md
 [15-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/15/Collections
 [15-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/To-Do-list.md
+
+[16-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/16.md
+[16-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/16/S2.Collections
+[16-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/DrawingApp.md
