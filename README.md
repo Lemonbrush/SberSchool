@@ -19,8 +19,8 @@
 | [`14`][14-preseentation] 	| [UIKit основы, Responder Chain][14-Lecture] 									| [Gesture][14-Practice]					 					| [GestureBagel][14-Homework]					| 
 | [`15`][15-16-preseentation] | [UITableView][15-Lecture]													| [Collections][15-Practice]									| [To-Do list][15-Homework]						| 
 | [`16`][15-16-preseentation] | [UICollectionView][16-Lecture]												| [Collections2][16-Practice] 									| [DrawingApp (Team project)][16-Homework] 		| 
-| [`17`] 					  | [Работа с сетью. NSURLSession/NSURLRequestХранилище][17-Lecture] 			| [NetworkTestApp][17-Practice] 								| - | 
-| [`18`] | Обзор MVC, MVVM, MVP, VIPER, Чистая архитектура | - | - | 
+|  `17` 					  | [Работа с сетью. NSURLSession/NSURLRequestХранилище][17-Lecture] 			| [NetworkTestApp][17-Practice] 								| - 											| 
+| [`18`][18-preseentation]    | [Обзор MVC, MVVM, MVP, VIPER, Чистая архитектура][18-Lecture] 				| [Architecture][18-practice] 									| [Почитать книгу "Чистый код"][18-Homework]	| 
 | [`19`] | Работа с камерой и галереей. Афинные преобразования и фильтры | - | - | 
 | [`20`] | Менеджеры зависимостей. Виды mach_o etc... | - | - | 
 | [`21`] | Тестирование: виды тестов, практика модульного тестирования | - | - | 
@@ -127,5 +127,10 @@
 
 [17-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/17.md
 [17-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/17/NetworkTestApp
+
+[18-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/18.pdf
+[18-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/18.md
+[18-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/18/DH_Architecture
+[18-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/NoteResources/CleanCode.pdf
 
 [FinalProject]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/FinalProject.md
