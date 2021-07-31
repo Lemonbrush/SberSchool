@@ -22,7 +22,7 @@
 | [`17`][17-preseentation] 	  | [Работа с сетью. NSURLSession/NSURLRequestХранилище][17-Lecture] 			| [NetworkTestApp][17-Practice] 								| - 											| 
 | [`18`][18-preseentation]    | [Обзор MVC, MVVM, MVP, VIPER, Чистая архитектура][18-Lecture] 				| [Architecture][18-practice] 									| [Почитать книгу "Чистый код"][18-Homework]	| 
 | [`19`][19-preseentation] 	  | [Package managers][19-Lecture] 												| [PackageManager][19-practice] 								| [Carthage][19-Homework]						| 
-| [`20`] | Работа с камерой и преобразование изображений | - | - | 
+| [`20`][20-preseentation] 	  | Работа с камерой и преобразование изображений				  				| [SelectingPhotosAndVideos][20-practice] 						| [MemeMaker][20-Homework] 						| 
 | [`21`] | Тестирование: виды тестов, практика модульного тестирования | - | - | 
 | [`22`] | Тестирование: модульное тестирование, test doubles, code coverage, tips and tricks | - | - | 
 | [`23`] | Введение в многопоточное программирование | - | - | 
@@ -138,5 +138,10 @@
 [19-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/19.md
 [19-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/19/PackageManager
 [19-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/Carthage.md
+
+[20-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/20.pdf
+[20-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/20.md
+[20-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/20/SelectingPhotosAndVideosInIOS
+[20-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/MemeMaker.md
 
 [FinalProject]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/FinalProject.md
