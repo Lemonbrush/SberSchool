@@ -1,0 +1,28 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "v2.0",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)",
+      "hash" : "61e8a3cd854af6d014235101f2b4fb1fedf4abe8089c4f5d13ae87b447cf4dfc",
+      "name" : "CatMew",
+      "container" : "CatMew.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "swiftToolchainVersion" : "5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)",
+      "hash" : "57ff0408aa7a0b8f3b21b4016cdb7765e9beaee6902cfa517a3d3689be37c1fc",
+      "name" : "CatMew",
+      "container" : "CatMew.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    }
+  ]
+}
