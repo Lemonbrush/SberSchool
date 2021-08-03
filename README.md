@@ -23,7 +23,7 @@
 | [`18`][18-preseentation]    | [Обзор MVC, MVVM, MVP, VIPER, Чистая архитектура][18-Lecture] 				| [Architecture][18-practice] 									| [Почитать книгу "Чистый код"][18-Homework]	| 
 | [`19`][19-preseentation] 	  | [Package managers][19-Lecture] 												| [PackageManager][19-practice] 								| [Carthage][19-Homework]						| 
 | [`20`][20-preseentation] 	  | Работа с камерой и преобразование изображений				  				| [SelectingPhotosAndVideos][20-practice] 						| [MemeMaker][20-Homework] 						| 
-| [`21`] | Тестирование: виды тестов, практика модульного тестирования | - | - | 
+| [`21`][21-preseentation] 	  | Тестирование: виды тестов, практика модульного тестирования 				| [UnitTestsExample][21-practice] 								| [FastTesting][21-Homework] 					| 
 | [`22`] | Тестирование: модульное тестирование, test doubles, code coverage, tips and tricks | - | - | 
 | [`23`] | Введение в многопоточное программирование | - | - | 
 | [`24`] | Механизмы синхронизации потоков | - | - | 
@@ -143,5 +143,9 @@
 [20-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/20.md
 [20-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/20/SelectingPhotosAndVideosInIOS
 [20-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/MemeMaker.md
+
+[21-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/21.pdf
+[21-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/21/UnitTestsExample
+[21-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/FastTesting.md
 
 [FinalProject]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/FinalProject.md
