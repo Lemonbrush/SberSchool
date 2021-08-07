@@ -22,10 +22,10 @@
 | [`17`][17-preseentation] 	  | [Работа с сетью. NSURLSession/NSURLRequestХранилище][17-Lecture] 			| [NetworkTestApp][17-Practice] 								| - 											| 
 | [`18`][18-preseentation]    | [Обзор MVC, MVVM, MVP, VIPER, Чистая архитектура][18-Lecture] 				| [Architecture][18-practice] 									| [Почитать книгу "Чистый код"][18-Homework]	| 
 | [`19`][19-preseentation] 	  | [Package managers][19-Lecture] 												| [PackageManager][19-practice] 								| [Carthage][19-Homework]						| 
-| [`20`][20-preseentation] 	  | Работа с камерой и преобразование изображений				  				| [SelectingPhotosAndVideos][20-practice] 						| [MemeMaker][20-Homework] 						| 
+| [`20`][20-preseentation] 	  | [Работа с камерой и преобразование изображений][20-Lecture]					| [SelectingPhotosAndVideos][20-practice] 						| [MemeMaker][20-Homework] 						| 
 | [`21`][21-preseentation] 	  | Тестирование: виды тестов, практика модульного тестирования 				| [UnitTestsExample][21-practice] 								| [FastTesting][21-Homework] 					| 
-| [`22`] | Тестирование: модульное тестирование, test doubles, code coverage, tips and tricks | - | - | 
-| [`23`] | Введение в многопоточное программирование | - | - | 
+| [`22`][22-preseentation]	  | [Тестирование: модульное тестирование, test doubles, code coverage, tips and tricks][22-Lecture] | [Stub][22-practice] 						| - 											| 
+| [`23`][23-preseentation] 	  | [Введение в многопоточное программирование][23-Lecture] 					| - 															| - 											| 
 | [`24`] | Механизмы синхронизации потоков | - | - | 
 | [`25`] | Сохранение данных. User Defaults/запись в файл/iCloud/Keychain | - | - | 
 | [`26`] | Core Data ч1 | - | - | 
@@ -147,5 +147,12 @@
 [21-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/21.pdf
 [21-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/21/UnitTestsExample
 [21-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/FastTesting.md
+
+[22-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/22.pdf
+[22-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/22.md
+[22-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/22/Example_01
+
+[23-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/23.pdf
+[23-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/23.md
 
 [FinalProject]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/FinalProject.md
