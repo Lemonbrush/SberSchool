@@ -9,6 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let textField: UITextField = {
+        let textField = UITextField(frame: .zero)
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.textAlignment = .center
+        textField.textColor = .white
+        
+        let redPlaceholderText = NSAttributedString(string: "Sample Text", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+                
+        textField.attributedPlaceholder = redPlaceholderText
+        
+        textField.font =  UIFont.init(name: "Helvetica Neue", size: 20.0)
+        
+        return textField
+    }()
+    
     let saveButton: UIButton = {
         let button = UIButton(frame: .zero)
         button.setImage(UIImage(systemName: "square.and.arrow.up"), for: .normal)
@@ -51,7 +66,19 @@ class ViewController: UIViewController {
         
         view.addSubview(backgroundView)
         backgroundView.addSubview(imageView)
+        backgroundView.addSubview(textField)
         view.addSubview(saveButton)
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(ViewController.keyboardWillShow(notification:)),
+                                               name: UIResponder.keyboardWillShowNotification,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                                 selector: #selector(ViewController.keyboardWillHide(notification:)),
+                                                 name: UIResponder.keyboardWillHideNotification,
+                                                object: nil)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
         
         setUpConstraints()
     }
@@ -66,6 +93,11 @@ class ViewController: UIViewController {
     }
     
     @objc func saveButtonTapped() {
+        
+        textField.selectedTextRange = nil
+        
+        screenShotMethod()
+        
         let alertController: UIAlertController = {
             let controller = UIAlertController(title: "ImageSaved", message: nil, preferredStyle: .alert)
             let action = UIAlertAction(title: "OK", style: .default)
@@ -78,6 +110,36 @@ class ViewController: UIViewController {
     }
     
     //MARK: - Helper functions
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    func screenShotMethod() {
+        let layer = backgroundView.layer
+        let scale = UIScreen.main.scale
+        UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
+
+        layer.render(in: UIGraphicsGetCurrentContext()!)
+        let screenshot = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        UIImageWriteToSavedPhotosAlbum(screenshot!, nil, nil, nil)
+    }
     
     func setUpConstraints() {
         
@@ -93,9 +155,14 @@ class ViewController: UIViewController {
         imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
         imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
         
-        //SaveButton
+        // SaveButton
         saveButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15).isActive = true
         saveButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30).isActive = true
+        
+        // TextField
+        textField.widthAnchor.constraint(equalTo: imageView.widthAnchor).isActive = true
+        textField.centerXAnchor.constraint(equalTo: imageView.centerXAnchor).isActive = true
+        textField.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 15).isActive = true
     }
 }
 
