@@ -26,7 +26,7 @@
 | [`21`][21-preseentation] 	  | Тестирование: виды тестов, практика модульного тестирования 				| [UnitTestsExample][21-practice] 								| [FastTesting][21-Homework] 					| 
 | [`22`][22-preseentation]	  | [Тестирование: модульное тестирование, test doubles, code coverage, tips and tricks][22-Lecture] | [Stub][22-practice] 						| - 											| 
 | [`23`][23-preseentation] 	  | [Введение в многопоточное программирование][23-Lecture] 					| - 															| - 											| 
-| [`24`] | Механизмы синхронизации потоков | - | - | 
+| [`24`] | Механизмы синхронизации потоков | - | [Puzzles-task][24-Homework] | 
 | [`25`] | Сохранение данных. User Defaults/запись в файл/iCloud/Keychain | - | - | 
 | [`26`] | Core Data ч1 | - | - | 
 | [`27`] | Core Data ч2 | - | - | 
@@ -154,5 +154,7 @@
 
 [23-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/23.pdf
 [23-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/23.md
+
+[24-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/Puzzles-task.md
 
 [FinalProject]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/FinalProject.md
