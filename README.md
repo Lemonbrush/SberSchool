@@ -27,8 +27,8 @@
 | [`22`][22-preseentation]	  | [Тестирование: модульное тестирование, test doubles, code coverage, tips and tricks][22-Lecture] | [Stub][22-practice] 						| - 											| 
 | [`23`][23-preseentation] 	  | [Введение в многопоточное программирование][23-Lecture] 					| - 															| - 											| 
 | [`24`][24-preseentation]	  | [Механизмы синхронизации потоков][24-Lecture] 								| [Multithreading][24-Practice] 								| [Puzzles-task][24-Homework] 					| 
-| [`25`][25-preseentation]	  | Сохранение данных. User Defaults/запись в файл/iCloud/Keychain			| [KeyChainApp][25-Practice-1]<p>[UserDefaultsWriter][25-Practice-2]| - 										| 
-| [`26`] | Core Data ч1 | - | - | 
+| [`25`][25-preseentation]	  | Сохранение данных. User Defaults/запись в файл/iCloud/Keychain				| [KeyChainApp][25-Practice-1]<p>[UserDefaultsWriter][25-Practice-2]| - 										| 
+| [`26`][26-preseentation] 	  | [Core Data ч1][26-Lecture] 													| [CoreDataOld][26-Practice-1]<p>[CoreDataSample][26-Practice-2]| - 											| 
 | [`27`] | Core Data ч2 | - | - | 
 | [`28`] | Синтаксис Objective-C, Коллекции и типы данных. | - | - | 
 | [`29`] | Протоколы, расширения, блоки, диспетчиризация в Objective-C | - | - |  
@@ -163,5 +163,10 @@
 [25-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/25.pdf
 [25-Practice-1]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/25/KeyChainApp
 [25-Practice-2]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/25/UserDefaultsWriter
+
+[26-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/26.pdf
+[26-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/26.md
+[26-Practice-1]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/26/CoreDataOld
+[26-Practice-2]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/26/CoreDataSample
 
 [FinalProject]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/FinalProject.md
