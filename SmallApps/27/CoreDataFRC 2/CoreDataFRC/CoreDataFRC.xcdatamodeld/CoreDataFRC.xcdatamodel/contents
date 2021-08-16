@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20E241" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Account" representedClassName="Account" syncable="YES">
+        <attribute name="balance" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="number" optional="YES" attributeType="String"/>
+        <relationship name="cards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Card" inverseName="account" inverseEntity="Card"/>
+    </entity>
+    <entity name="Card" representedClassName="Card" syncable="YES">
+        <attribute name="balance" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="number" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="cards" inverseEntity="Account"/>
+    </entity>
+    <elements>
+        <element name="Card" positionX="44.049560546875" positionY="-157.4511108398438" width="128" height="118"/>
+        <element name="Account" positionX="-409.77734375" positionY="-10.58526611328125" width="128" height="88"/>
+    </elements>
+</model>
