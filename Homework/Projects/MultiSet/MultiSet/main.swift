@@ -10,16 +10,11 @@ import Foundation
 struct Multiset<T: Hashable> {
     var storage: [T : Int] = [:]
     
-    var totalCount: Int {
-        var count = 0
-        storage.values.forEach { value in
-            count += value
-        }
-        return count
-    }
+    var totalCount: Int = 0
     
     mutating func add(_ element: T) {
         storage[element, default: 0] += 1
+        totalCount += 1
     }
     
     func count(for element: T) -> Int {
@@ -33,6 +28,7 @@ struct Multiset<T: Hashable> {
             } else {
                 storage[element] = nil
             }
+            totalCount -= 1
         }
     }
     
