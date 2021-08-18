@@ -12,7 +12,7 @@
 | [`7`][7-preseentation] 	| [Функции высшего порядка][7-Lecture] 											| [Filter][7-Practice] 											| [HigherOrderFunctions][7-Homework]			| 
 | [`8`][8-preseentation] 	| [Обработка ошибок в Swift][8-Lecture] 										| - 															| [ErrorHandling][8-Homework]					| 
 | [`9`][9-preseentation]	| [Шаблоны проектирования][9-Lecture] 											| [Builder][9-Practice-1]<p>[BuilderAndDecorator][9-Practice-2] | [Patterns][9-Homework] 						| 
-| [`10`][10-preseentation]  | [Виды контроллеров. Жизненный цикл UIViewController][10-Lecture] 				| [UINavigationController][10-Practice-1]<p>[UITabbarViewController][10-Practice-2] | [ActivityView][10-Homework] | 
+| [`10`][10-preseentation]  | [Виды контроллеров. Жизненный цикл UIViewController][10-Lecture] 				| [UINavigationController][10-Practice-1]<p>[UITabbarViewController][10-Practice-2] | [ActivityView][10-Homework]| 
 | [`11`][11-preseentation] 	| [MVC от Apple][11-Lecture] 													| [MVC][11-Practice]											| [MVCColors][11-Homework]						| 
 | [`12`][12-preseentation]	| [Autolayout][12-Lecture]														| [Autolayout][12-Practice] 									| - 											| 
 | [`13`][13-preseentation] 	| [UIView анимации, CoreAnimation, Property Animation, UIKitDynamics][13-Lecture] | [ButtonAnimation][13-Practice-1]<p>[Transition][13-Practice-2] | [Animations][13-Homework] 					|  
@@ -29,7 +29,7 @@
 | [`24`][24-preseentation]	  | [Механизмы синхронизации потоков][24-Lecture] 								| [Multithreading][24-Practice] 								| [Puzzles-task][24-Homework] 					| 
 | [`25`][25-preseentation]	  | Сохранение данных. User Defaults/запись в файл/iCloud/Keychain				| [KeyChainApp][25-Practice-1]<p>[UserDefaultsWriter][25-Practice-2]| - 										| 
 | [`26`][26-preseentation] 	  | [Core Data ч1][26-Lecture] 													| [CoreDataOld][26-Practice-1]<p>[CoreDataSample][26-Practice-2]| - 											| 
-| [`27`] | Core Data ч2 | - | - | 
+| [`27`][27-preseentation] 	  | Core Data ч2 																| [CoreDataFRC][27-Practice-1]<p>[CoreDataFRC2][27-Practice-2]	| - 											| 
 | [`28`] | Синтаксис Objective-C, Коллекции и типы данных. | - | - | 
 | [`29`] | Протоколы, расширения, блоки, диспетчиризация в Objective-C | - | - |  
 | [`30`] | Управление памятью ARC, MRC | - | - | 
@@ -168,5 +168,9 @@
 [26-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/26.md
 [26-Practice-1]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/26/CoreDataOld
 [26-Practice-2]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/26/CoreDataSample
+
+[27-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/27.pdf
+[27-Practice-1]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/27/CoreDataFRC
+[27-Practice-2]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/27/CoreDataFRC2
 
 [FinalProject]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/FinalProject.md
