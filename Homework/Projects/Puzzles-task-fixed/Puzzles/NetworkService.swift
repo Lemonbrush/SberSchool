@@ -39,24 +39,37 @@ class NetworkService {
         
         // Запускаем методы в фоновом режиме
         let pazzleLoadingQueue = DispatchQueue(label: "com.Loading.Pazzle")
-        pazzleLoadingQueue.async {
+        pazzleLoadingQueue.sync {
             
             // Создаём группу методов
             let imageLoadingdGroup = DispatchGroup()
             
-            // Вызываем методы в группе
-            imageLoadingdGroup.enter()
-            
             for url in urls {
-                let data = try? Data(contentsOf: url)
-                if let safeData = data, let safeImage = UIImage(data: safeData) {
-                    results.append(safeImage)
+                
+                // Вызываем методы в группе
+                imageLoadingdGroup.enter()
+                
+                let task = URLSession.shared.dataTask(with: url) { data, response, error in
+                    if error != nil {
+                        return
+                    }
+                    guard  let httpResponse = response as? HTTPURLResponse,
+                        (200...299).contains(httpResponse.statusCode) else {
+                        return
+                    }
+                    if let safeData = data, let safeImage = UIImage(data: safeData) {
+                        results.append(safeImage)
+                    }
+                    
+                    imageLoadingdGroup.leave()
+                    // Закрываем группу
                 }
+                task.resume()
+                
             }
-            
-            imageLoadingdGroup.leave()
-            // Закрываем группу
         
+        imageLoadingdGroup.wait()
+            
             // Отправляем результат
 		if let merged = ImagesServices.image(byCombining: results) {
 				completion(.success(merged))
@@ -73,45 +86,35 @@ class NetworkService {
 	///  Верните картинку с этим кладом в completion
 	public func loadQuiz(completion: @escaping(Result<UIImage, Error>) -> ()) {
 		let keyURL = URL(string: "https://sberschool-c264c.firebaseio.com/enigma.json?avvrdd_token=AIzaSyDqbtGbRFETl2NjHgdxeOGj6UyS3bDiO-Y")!
-        
-        var urlStr: String?
-        
-        let quizLoadingQueue = DispatchQueue(label: "com.Loading.Quiz")
-        
-        quizLoadingQueue.sync {
-            let data = try? Data(contentsOf: keyURL)
-            
-            if let safeUrl = String(data: data!, encoding: .utf8) {
-                urlStr = safeUrl
-                
-                /// По какой-то причине приходит строка с лишними символами, так что мы находим берем только нужную нам часть
-                let input = urlStr!
-                let detector = try! NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
-                let matches = detector.matches(in: input, options: [], range: NSRange(location: 0, length: input.utf16.count))
-
-                for match in matches {
-                    guard let range = Range(match.range, in: input) else { continue }
-                    urlStr = String(input[range])
-                }
-            }
-        }
-        
-        let url = URL(string: urlStr!)!
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+ 
+        let task = URLSession.shared.dataTask(with: keyURL) { data, response, error in
             if error != nil {
                 return
             }
+            
             guard  let httpResponse = response as? HTTPURLResponse,
                 (200...299).contains(httpResponse.statusCode) else {
                 return
             }
-            if let safeData = data, let safeImage = UIImage(data: safeData) {
-                DispatchQueue.main.async {
-                    completion(.success(safeImage))
-                }
+        
+            guard let safeData = data,
+                  var stringUrlOfImage = String(data: safeData, encoding: .utf8) else {
+                return
+                
             }
+
+            stringUrlOfImage.removeLast()
+            stringUrlOfImage.removeFirst()
+            
+            guard let imageURL = URL(string: stringUrlOfImage),
+                  let imageData = try? Data(contentsOf: imageURL),
+                  let resultImage = UIImage(data: imageData) else {
+                return
+            }
+            
+            completion(.success(resultImage))
+            
         }
         task.resume()
-	}
-	
+    }
 }
