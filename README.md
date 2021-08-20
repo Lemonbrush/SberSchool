@@ -30,7 +30,7 @@
 | [`25`][25-preseentation]	  | Сохранение данных. User Defaults/запись в файл/iCloud/Keychain				| [KeyChainApp][25-Practice-1]<p>[UserDefaultsWriter][25-Practice-2]| - 										| 
 | [`26`][26-preseentation] 	  | [Core Data ч1][26-Lecture] 													| [CoreDataOld][26-Practice-1]<p>[CoreDataSample][26-Practice-2]| - 											| 
 | [`27`][27-preseentation] 	  | Core Data ч2 																| [CoreDataFRC][27-Practice-1]<p>[CoreDataFRC2][27-Practice-2]	| - 											| 
-| [`28`] | Синтаксис Objective-C, Коллекции и типы данных. | - | - | 
+| [`28`][28-preseentation] 	  | [Синтаксис Objective-C, Коллекции и типы данных][28-Lecture] 				| [Test][28-Practice] 											| - 											| 
 | [`29`] | Протоколы, расширения, блоки, диспетчиризация в Objective-C | - | - |  
 | [`30`] | Управление памятью ARC, MRC | - | - | 
 | [`31`] | Swift + Objective-C | - | - | 
@@ -172,5 +172,9 @@
 [27-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/27.pdf
 [27-Practice-1]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/27/CoreDataFRC
 [27-Practice-2]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/27/CoreDataFRC2
+
+[28-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/28.pdf
+[28-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/28.md
+[28-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/28/Test
 
 [FinalProject]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/FinalProject.md
