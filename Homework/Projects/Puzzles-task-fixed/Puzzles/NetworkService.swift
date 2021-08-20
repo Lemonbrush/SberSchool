@@ -36,46 +36,40 @@ class NetworkService {
 		
 		// в этот массив запишите итоговые картинки
 		var results = [UIImage]()
+            
+        // Создаём группу методов
+        let imageLoadingdGroup = DispatchGroup()
         
-        // Запускаем методы в фоновом режиме
-        let pazzleLoadingQueue = DispatchQueue(label: "com.Loading.Pazzle")
-        pazzleLoadingQueue.sync {
+        for url in urls {
             
-            // Создаём группу методов
-            let imageLoadingdGroup = DispatchGroup()
+            // Вызываем методы в группе
+            imageLoadingdGroup.enter()
             
-            for url in urls {
-                
-                // Вызываем методы в группе
-                imageLoadingdGroup.enter()
-                
-                let task = URLSession.shared.dataTask(with: url) { data, response, error in
-                    if error != nil {
-                        return
-                    }
-                    guard  let httpResponse = response as? HTTPURLResponse,
-                        (200...299).contains(httpResponse.statusCode) else {
-                        return
-                    }
-                    if let safeData = data, let safeImage = UIImage(data: safeData) {
-                        results.append(safeImage)
-                    }
-                    
-                    imageLoadingdGroup.leave()
-                    // Закрываем группу
+            let task = URLSession.shared.dataTask(with: url) { data, response, error in
+                if error != nil {
+                    return
                 }
-                task.resume()
+                guard  let httpResponse = response as? HTTPURLResponse,
+                    (200...299).contains(httpResponse.statusCode) else {
+                    return
+                }
+                if let safeData = data, let safeImage = UIImage(data: safeData) {
+                    results.append(safeImage)
+                }
                 
+                imageLoadingdGroup.leave()
+                // Закрываем группу
             }
-        
-        imageLoadingdGroup.wait()
+            task.resume()
             
-            // Отправляем результат
-		if let merged = ImagesServices.image(byCombining: results) {
-				completion(.success(merged))
-			}
+        
+            imageLoadingdGroup.notify(queue: .main, execute: {
+                // Отправляем результат
+                if let merged = ImagesServices.image(byCombining: results) {
+                    completion(.success(merged))
+                }
+            })
         }
-
 	}
 	
 	
