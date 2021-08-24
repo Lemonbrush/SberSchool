@@ -32,7 +32,7 @@
 | [`27`][27-preseentation] 	  | Core Data ч2 																| [CoreDataFRC][27-Practice-1]<p>[CoreDataFRC2][27-Practice-2]	| - 											| 
 | [`28`][28-preseentation] 	  | [Синтаксис Objective-C, Коллекции и типы данных][28-Lecture] 				| [Test][28-Practice] 											| - 											| 
 | [`29`][29-preseentation] 	  | [Протоколы, расширения, блоки, диспетчиризация в Objective-C][29-Lecture] 	| [Test2][29-Practice] 											| - 											|  
-| [`30`] | Управление памятью ARC, MRC | - | - | 
+| [`30`][30-preseentation] 	  | [Управление памятью ARC, MRC][30-Lecture] 									| - 															| - 											| 
 | [`31`] | Swift + Objective-C | - | - | 
 | [`32`] | Тестирование: UITests and snapshot testing | - | - | 
 | [`33`] | Средства отладки и профилирования. Локализация приложения | - | - | 
@@ -180,5 +180,8 @@
 [29-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/29.pdf
 [29-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/29.md
 [29-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/29/Test2
+
+[30-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/30.pdf
+[30-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/30.md
 
 [FinalProject]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/FinalProject.md
