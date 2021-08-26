@@ -33,7 +33,7 @@
 | [`28`][28-preseentation] 	  | [Синтаксис Objective-C, Коллекции и типы данных][28-Lecture] 				| [Test][28-Practice] 											| - 											| 
 | [`29`][29-preseentation] 	  | [Протоколы, расширения, блоки, диспетчиризация в Objective-C][29-Lecture] 	| [Test2][29-Practice] 											| - 											|  
 | [`30`][30-preseentation] 	  | [Управление памятью ARC, MRC][30-Lecture] 									| - 															| - 											| 
-| [`31`] | Swift + Objective-C | - | - | 
+| [`31`] | Swift + Objective-C | [objc+swift][31-Practice] | [interop][31-Homework] | 
 | [`32`] | Тестирование: UITests and snapshot testing | - | - | 
 | [`33`] | Средства отладки и профилирования. Локализация приложения | - | - | 
 | [`34`] | Сопровождение приложения. Системы анализа крашей, аналитические системы | - | - | 
@@ -183,5 +183,8 @@
 
 [30-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/30.pdf
 [30-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/30.md
+
+[31-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/31/interop
+[31-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/interop.md
 
 [FinalProject]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/FinalProject.md
