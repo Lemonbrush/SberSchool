@@ -31,7 +31,7 @@
 | [`26`][26-preseentation] 	  | [Core Data ч1][26-Lecture] 													| [CoreDataOld][26-Practice-1]<p>[CoreDataSample][26-Practice-2]| - 											| 
 | [`27`][27-preseentation] 	  | Core Data ч2 																| [CoreDataFRC][27-Practice-1]<p>[CoreDataFRC2][27-Practice-2]	| - 											| 
 | [`28`][28-preseentation] 	  | [Синтаксис Objective-C, Коллекции и типы данных][28-Lecture] 				| [Test][28-Practice] 											| - 											| 
-| [`29`][29-preseentation] 	  | [Протоколы, расширения, блоки, диспетчиризация в Objective-C][29-Lecture] 	| [Test2][29-Practice] 											| - 											|  
+| [`29`][29-preseentation] 	  | [Протоколы, расширения, блоки, диспетчиризация в Objective-C][29-Lecture] 	| [Test2][29-Practice] 											| [objc-delegate][29-Homework] 				|	 
 | [`30`][30-preseentation] 	  | [Управление памятью ARC, MRC][30-Lecture] 									| - 															| - 											| 
 | [`31`][31-preseentation] 	  | [Swift + Objective-C][31-Lecture]											| [objc+swift][31-Practice] 									| [interop][31-Homework] 						| 
 | [`32`][32-preseentation]	  | [Тестирование: UITests and snapshot testing][32-Lecture] 					| - 															| Добавить снапшот тест в финальный проект 		| 
@@ -180,6 +180,7 @@
 [29-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/29.pdf
 [29-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/29.md
 [29-Practice]: https://github.com/Lemonbrush/SberSchool/blob/master/SmallApps/29/Test2
+[29-Homework]: https://github.com/Lemonbrush/SberSchool/blob/master/Homework/objc-delegate.md
 
 [30-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/30.pdf
 [30-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/30.md
