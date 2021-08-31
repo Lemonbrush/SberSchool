@@ -1,0 +1,3 @@
+module Library {
+    umbrella header "../Library/Umbrella-Header.h"
+}
