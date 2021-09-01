@@ -35,7 +35,7 @@
 | [`30`][30-preseentation] 	  | [Управление памятью ARC, MRC][30-Lecture] 									| - 															| [MemoryManagement][30-Homework]				| 
 | [`31`][31-preseentation] 	  | [Swift + Objective-C][31-Lecture]											| [objc+swift][31-Practice] 									| [interop][31-Homework] 						| 
 | [`32`][32-preseentation]	  | [Тестирование: UITests and snapshot testing][32-Lecture] 					| - 															| `Добавить снапшот тест в финальный проект` 	| 
-| [`33`][33-preseentation]	  | Средства отладки и профилирования. Локализация приложения | - | - | 
+| [`33`][33-preseentation]	  | [Средства отладки и профилирования. Локализация приложения][33-Lecture] 	| - 															| - 											| 
 | [`34`] | Сопровождение приложения. Системы анализа крашей, аналитические системы | - | - | 
 | [`35`] | Введение в SwiftUI | - | - | 
 | [`36`] | TBD | - | - | 
@@ -195,5 +195,6 @@
 [32-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/32.md
 
 [33-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/33
+[33-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/33.md
 
 [FinalProject]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/FinalProject.md
