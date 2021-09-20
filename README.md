@@ -37,10 +37,10 @@
 | [`32`][32-preseentation]	  | [Тестирование: UITests and snapshot testing][32-Lecture] 					| - 															| `Добавить снапшот тест в финальный проект` 	| 
 | [`33`][33-preseentation]	  | [Средства отладки и профилирования. Локализация приложения][33-Lecture] 	| - 															| - 											| 
 | [`34`][34-preseentation] 	  | Сопровождение приложения. Системы анализа крашей, аналитические системы 	| - 															| - 											| 
-| [`35`] | Введение в SwiftUI | - | - | 
-| [`36`] | TBD | - | - | 
-| [`37`] | Консультации | - | - | 
-| [`38`] | Консультации | - | - | 
+| [`35`][35-preseentation] 	  | Введение в SwiftUI | - | - | 
+| [`36`][36-preseentation]    | TBD | - | - | 
+
+---
 
 # [🎖 Итоговый проект 🎖][FinalProject]
 
@@ -198,5 +198,9 @@
 [33-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/33.md
 
 [34-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/34.pdf
+
+[35-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/35.pdf
+
+[36-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/36.pdf
 
 [FinalProject]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/FinalProject.md
