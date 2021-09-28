@@ -1,6 +1,8 @@
 ![cover](https://github.com/Lemonbrush/SberSchool/blob/master/NoteResources/FinalProject/cover.png)
 
-# [🎖 Ссылка на проект 🎖](https://github.com/Lemonbrush/Weather/tree/SberSchoolProject)
+# [🎖 Ссылка на проект 🎖](https://github.com/Lemonbrush/Weather/tree/SberSchoolProject)  
+
+[📈 Презентация 📉](https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/FinalProject.pdf)
 
 ## 📄 Требования
 
