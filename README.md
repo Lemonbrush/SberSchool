@@ -44,6 +44,10 @@
 
 # [🎖 Итоговый проект 🎖][FinalProject]
 
+---
+
+[`Фидбек по итогам собеседования`](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/Feedback.md)
+
 [0-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/0.md
 
 [1-preseentation]: https://github.com/Lemonbrush/SberSchool/blob/master/Presentations/1.pdf
