@@ -24,21 +24,21 @@
 | [`19`][19-preseentation] 	  | [Package managers][19-Lecture] 												| [PackageManager][19-practice] 								| [Carthage][19-Homework]						| 
 | [`20`][20-preseentation] 	  | [Работа с камерой и преобразование изображений][20-Lecture]					| [SelectingPhotosAndVideos][20-practice] 						| [MemeMaker][20-Homework] 						| 
 | [`21`][21-preseentation] 	  | Тестирование: виды тестов, практика модульного тестирования 				| [UnitTestsExample][21-practice] 								| [FastTesting][21-Homework] 					| 
-| [`22`][22-preseentation]	  | [Тестирование: модульное тестирование, test doubles, code coverage, tips and tricks][22-Lecture] | [Stub][22-practice] 						| - 											| 
+| [`22`][22-preseentation]	  | [Тестирование: модульное тестирование, test doubles, code coverage, tips and tricks][22-Lecture] | [Stub][22-practice] 						| `Добавить модульные тесты в финальный проект` | 
 | [`23`][23-preseentation] 	  | [Введение в многопоточное программирование][23-Lecture] 					| - 															| - 											| 
 | [`24`][24-preseentation]	  | [Механизмы синхронизации потоков][24-Lecture] 								| [Multithreading][24-Practice] 								| [Puzzles-task][24-Homework] 					| 
-| [`25`][25-preseentation]	  | Сохранение данных. User Defaults/запись в файл/iCloud/Keychain				| [KeyChainApp][25-Practice-1]<p>[UserDefaultsWriter][25-Practice-2]| - 										| 
+| [`25`][25-preseentation]	  | Сохранение данных. User Defaults/запись в файл/iCloud/Keychain				| [KeyChainApp][25-Practice-1]<p>[UserDefaultsWriter][25-Practice-2]| `Добавить UserDefaults в финальный проект`| 
 | [`26`][26-preseentation] 	  | [Core Data ч1][26-Lecture] 													| [CoreDataOld][26-Practice-1]<p>[CoreDataSample][26-Practice-2]| - 											| 
-| [`27`][27-preseentation] 	  | Core Data ч2 																| [CoreDataFRC][27-Practice-1]<p>[CoreDataFRC2][27-Practice-2]	| - 											| 
+| [`27`][27-preseentation] 	  | Core Data ч2 																| [CoreDataFRC][27-Practice-1]<p>[CoreDataFRC2][27-Practice-2]	| `Добавить CoreData в финальный проект`    	| 
 | [`28`][28-preseentation] 	  | [Синтаксис Objective-C, Коллекции и типы данных][28-Lecture] 				| [Test][28-Practice] 											| - 											| 
 | [`29`][29-preseentation] 	  | [Протоколы, расширения, блоки, диспетчиризация в Objective-C][29-Lecture] 	| [Test2][29-Practice] 											| [objc-delegate][29-Homework] 					|	 
 | [`30`][30-preseentation] 	  | [Управление памятью ARC, MRC][30-Lecture] 									| - 															| [MemoryManagement][30-Homework]				| 
 | [`31`][31-preseentation] 	  | [Swift + Objective-C][31-Lecture]											| [objc+swift][31-Practice] 									| [interop][31-Homework] 						| 
 | [`32`][32-preseentation]	  | [Тестирование: UITests and snapshot testing][32-Lecture] 					| - 															| `Добавить снапшот тест в финальный проект` 	| 
 | [`33`][33-preseentation]	  | [Средства отладки и профилирования. Локализация приложения][33-Lecture] 	| - 															| - 											| 
-| [`34`][34-preseentation] 	  | Сопровождение приложения. Системы анализа крашей, аналитические системы 	| - 															| - 											| 
-| [`35`][35-preseentation] 	  | Введение в SwiftUI | - | - | 
-| [`36`][36-preseentation]    | TBD | - | - | 
+| [`34`][34-preseentation] 	  | Сопровождение приложения. Системы анализа крашей, аналитические системы 	| - 															| `Добавить Crashlytics в финальный проект` 	| 
+| [`35`][35-preseentation] 	  | Введение в SwiftUI 															| - 															| - 											| 
+| [`36`][36-preseentation]    | TBD 																		| - 															| - 											| 
 
 ---
 
