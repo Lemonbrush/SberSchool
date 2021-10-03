@@ -46,7 +46,7 @@
 
 ---
 
-[`Фидбек по итогам собеседования`](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/Feedback.md)
+## [`Фидбек по итогам собеседования`](https://github.com/Lemonbrush/SberSchool/blob/master/Notes/Feedback.md)
 
 [0-Lecture]: https://github.com/Lemonbrush/SberSchool/blob/master/Notes/0.md
 
